@@ -5,17 +5,12 @@
     margin: 0;
 }
 
-/*font-family: 'Be Vietnam Pro', sans-serif;
-*/
-
 .cabezera{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     height: 85px;
-    
-    
 }
 
 .cabezera img{
@@ -70,14 +65,15 @@ button a{
 .parteSuperior{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 60px;               /* cambiarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr  creo que estaba 185px*/
 }
 
 .parteSuperior .uno{
     width: 32.8%;
-    margin-right: 170px;
-    margin-top: 20px;
+    /* margin-right: 170px;
+    margin-top: 20px; */
+    margin: 3% 0 3% 9%;
 }
 
 .parteSuperior .uno .unoUno{
@@ -99,6 +95,10 @@ button a{
     line-height: 26.01px;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.parteSuperior .dos{
+    margin: 3% 8% 3% 0%;
 }
 
 /* ------------- MAIN SEGUNDA PARTE  ------------------------------------------------------------------------------------- */
@@ -345,10 +345,14 @@ button a{
 
 
 
-@media (min-width:400px) and (max-width:460px) {
+@media (min-width:400px) and (max-width:460px) {   /* --------------------------------   MEDIA QUERY   ------------------------------------------*/
 
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 
-/*  ----------- HEADER --------------- */
+/*  ----------- 400/460 HEADER --------------- */
 
     .cabezera button{
         display: none;
@@ -389,14 +393,12 @@ button a{
     }
 
     .cabezera img{
-        /* height: 23.74px;
-        width: 145.54px; */
         height: 17.74px;
         width: 100.54px;
         margin-left: 30px;
     }
 
-    /* ------------- MAIN PARTE SUPERIOR  ----------------- */
+    /* ------------- 400/460 MAIN PARTE SUPERIOR  ----------------- */
 
     .parteSuperior {
         display: flex;
@@ -441,7 +443,7 @@ button a{
         margin-left: 93px;
     }
 
-    /* ------------- MAIN PARTE DEL MEDIO  ----------------- */
+    /* ------------- 400/460 MAIN PARTE DEL MEDIO  ----------------- */
 
     .parteMedio{
         margin-bottom: 0px;
@@ -540,13 +542,14 @@ button a{
     display: flex;
     flex-direction: column;
     height: 84vh;
+    width: 100%;
 }
 
 .footerInferior .four p{
     display: none;
 }
 
-.footerInferior .four {                            /*        Form          */
+.footerInferior .four {    /*   Form   */
     order: -5;
     margin: 40px 0 30px 80px;
 }
@@ -555,18 +558,22 @@ button a{
 
 .footerInferior .two{        /* Lista 1 */
     display: flex;
-    flex-direction: row;
-    display: inline;
+    justify-content: center;
     order: -4;
-    width: 40%; 
+    margin-right: 32px;
+    text-align: center;
+    
 }
 
 .footerInferior .three{       /* Lista 2  */
- 
-    display: inline;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 32px;
     order: -3;
-    width: 40%; 
-    float: right;
+    
+    /* width: 40%;  */
+    
 }
 
 .footerInferior .one{       /* Iconos e imagen del logo */
@@ -595,6 +602,268 @@ button a{
     margin-bottom: 10px;
 }
 
+}
 
+
+@media (min-width:340px) and (max-width:399.9px) {  /* --------------------------------   MEDIA QUERY   ------------------------------------------*/
+ 
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+/*  ----------- 340/399.9 HEADER --------------- */
+
+    .cabezera button{
+        display: none;
+    }
+
+    .cabezera {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .cabezera .btn_menu{
+        display: inline-flex;
+        margin-right: 80px;
+    }
+
+    .cabezera .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 85px);
+        background: #F3603B;
+        top:  -100%;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cabezera .menu_items li{
+        margin: 20px 20px 0 0;
+        line-height: 30px;
+    }
+
+    .cabezera .menu_items li a{
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .cabezera img{
+        /* height: 23.74px;
+        width: 145.54px; */
+        height: 17.74px;
+        width: 100.54px;
+        margin-left: 30px;
+    }
+
+    /* ------------- 340/399.9  MAIN PARTE SUPERIOR  ----------------- */
+
+    .parteSuperior {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 120px;
+    }
+
+    .parteSuperior .dos img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 5%;
+    }
+
+    .parteSuperior .dos{
+        width:310px;
+        height: 310px;
+    }
+
+    .parteSuperior .uno{
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .parteSuperior .uno h2{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 50.47px;
+        text-align: center;
+    }
+
+    .parteSuperior .uno .unoUno{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .parteSuperior .uno p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .parteSuperior .uno button{
+        margin-left: 80px;
+    }
+
+    /* ------------- 340/399.9 MAIN PARTE DEL MEDIO  ----------------- */
+
+    .parteMedio{
+        margin-bottom: 0px;
+    }
+
+    .parteMedio .columna1{
+        width: 70%;
+        margin-bottom: 80px;
+    }
+
+    .parteMedio .columna1 div{
+        width: 100%;
+    }
+    
+    .parteMedio .columna2{
+        width: 100%;
+    }
+
+    .parteMedio .columna1 h3{
+        font-size: 30px;
+        line-height: 41.26px;
+        text-align: center;
+    }
+    
+    .parteMedio .columna1 p{
+        
+        line-height: 24.18px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .parteMedio .columna2 .titulo{
+        margin: 18px 0 18px 15px;
+    }
+    
+    .parteMedio .columna2 .titulo div{
+        margin-right: 15px;
+    }
+    
+    .parteMedio .columna2 p{
+        font-size: 14.3px;
+        line-height: 25.52px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+ /* ------------- 340/399.9 MAIN PARTE INFERIOR  ----------------- */
+
+ .parteAbajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ .parteAbajo h3{
+    font-size: 30.21px;
+ }
+
+ .parteAbajo .card.uno{
+     width: 80%;
+     margin: 0 10% 0 10%;
+ }
+
+ .parteAbajo .card.dos{
+     display: none;
+ }
+    
+ .parteAbajo .card.tres{
+    display: none;
+}
+
+ /* ------------- 340/399.9  FOOTER PRIMERA PARTE  ----------------- */
+
+ .footerSuperior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.footerSuperior div{
+    width: 80%;
+}
+
+.footerSuperior p{
+    font-size: 40px;
+    line-height: 47.84px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ------------- 340/399.9  FOOTER ULTIMA PARTE  ----------------- */
+
+.footerInferior{
+    display: flex;
+    flex-direction: column;
+    height: 84vh;
+    width: 100%;
+}
+
+.footerInferior .four p{
+    display: none;
+}
+
+.footerInferior .four {       /*  Form   */
+    order: -5;
+    margin: 40px 0 30px 80px;
+}
+
+
+
+.footerInferior .two{        /* Lista 1 */
+    display: flex;
+    justify-content: center;
+    order: -4;
+    margin-right: 32px;
+    text-align: center;
+    
+}
+
+.footerInferior .three{       /* Lista 2  */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 32px;
+    order: -3;
+    
+    /* width: 40%;  */
+    
+}
+
+.footerInferior .one{       /* Iconos e imagen del logo */
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footerInferior .one div a img{      /* Para agrandar imagenes */
+    max-width: 100%;
+    max-height: 100%;
+    width: 33px;
+    margin-left: 15px;
+}
+
+.footerInferior .one div{                          
+    margin-bottom: 30px;
+}
+
+
+.footerInferior .five{             /* Copyright  */
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+}
 
 
