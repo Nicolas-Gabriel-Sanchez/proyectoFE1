@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*font-family: 'Be Vietnam Pro', sans-serif;
+*/
+
+.cabezera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85px;
+    
+    
+}
+
+.cabezera img{
+    height: 23.74px;
+    width: 145.54px;
+}
+
+.cabezera .menu_items{
+    display: flex;
+    margin-right: 130px;
+    
+}
+
+.cabezera .menu_items li {
+    list-style-type:none;
+    margin-left: 35px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.cabezera .menu_items li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.cabezera .btn_menu{
+    cursor: pointer;
+    display: none;
+}
+
+.cabezera ul.show{     
+    top: 85px;
+}
+
+button{
+    width: 134px;
+    height: 44px;
+    background-color: #F3603B;
+    border-radius: 50px;
+    border: #F3603B;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 13.18px;
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+  /* ------------- MAIN PARTE SUPERIOR  ------------------------------------------------------------------------------------ */
+
+.parteSuperior{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;               /* cambiarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr  creo que estaba 185px*/
+}
+
+.parteSuperior .uno{
+    width: 32.8%;
+    margin-right: 170px;
+    margin-top: 20px;
+}
+
+.parteSuperior .uno .unoUno{
+    width: 78%;
+}
+
+.parteSuperior .uno h2{
+    font-size: 58px;
+    font-weight: bold;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    line-height: 66.47px;
+    color: #232C50;
+}
+
+.parteSuperior .uno p{
+    font-size: 16.56px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: left;
+    line-height: 26.01px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* ------------- MAIN SEGUNDA PARTE  ------------------------------------------------------------------------------------- */
+
+.parteMedio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.parteMedio .columna1{
+    width: 32%;
+    margin-left: 25px;
+}
+
+.parteMedio .columna1 div{
+    width: 75%;
+}
+
+.parteMedio .columna2{
+    width: 32%;
+    margin-right: 110px;
+}
+
+.parteMedio .columna1 h3{
+    color: #232851;
+    font-size: 36px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    line-height: 41.26px;
+}
+
+.parteMedio .columna1 p{
+    font-family: "Be Vietnam Pro", sans-serif;
+    line-height: 24.18px;
+    margin-top: 25px;
+}
+
+.parteMedio .columna2 .titulo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.parteMedio .columna2 .titulo div{
+    color: white;
+    background-color: #F3603B;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-family: "Be Vietnam Pro", sans-serif; 
+    margin-right: 23px;
+}
+
+.parteMedio .columna2 .titulo h4{
+    color: #323851;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.parteMedio .columna2 p{
+    color: #B3B2B7;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500px;;
+    font-size: 16.3px;
+    line-height: 25.52px;
+    margin-bottom: 42px;
+}
+
+/*  ----------------------------  TERCERA PARTE DEL MAIN  ----------------------------------------  */
+
+.parteAbajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.parteAbajo h3{
+    color: #242E53;
+    font-size: 39.21px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin: 115px 0px;
+}
+
+.parteAbajo article{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.parteAbajo article .card{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.parteAbajo .card img{
+    position: relative;
+    bottom: 18%; 
+}
+
+.parteAbajo article .card h5{
+    color: #3F4868;
+    font-size: 16.07px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    line-height: 25.17px;
+    margin-bottom: 28px;   
+}
+
+.parteAbajo article .card div{
+    width: 89%;
+}
+
+.parteAbajo article .card p{
+    color: #B9B9C1;
+    font-family: "Be Vietnam Pro", sans-serif;
+    text-align: center;
+    line-height: 25.06px;
+}
+
+/*  --------  FOOTER  /   PARTE SUPERIOR  --------   */
+
+.footerSuperior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh;
+    background-color: #F3613C;
+}
+
+.footerSuperior div{
+    width: 30%;
+}
+
+.footerSuperior p{
+    color: white;
+    font-size: 40px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    line-height: 47.84px;
+}
+
+.footerSuperior button{
+    width: 134px;
+    height: 44px;
+    background-color: white;
+    border-radius: 50px;
+    border: white;
+}
+
+.footerSuperior button a{
+    color: #F3603B;
+}
+
+/*  ------------------------------------  FOOTER  /   PARTE INFERIOR  -----------------------------------------------  */
+
+.footerInferior{
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 28vh;
+}
+
+.footerInferior .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerInferior .one div a{
+    margin-right: 17px;
+}
+
+/* -------- TERCERA COLUMNA FOOTER FINAL  -------- */
+
+.footerInferior .two{
+    display: flex;
+    align-items: center;
+}
+
+.footerInferior ul{
+    list-style: none;
+}
+
+.footerInferior li{
+    margin-bottom: 12px;
+}
+
+.footerInferior a{
+    color: white;
+    text-decoration: none;
+}
+
+ /* -------- TERCERA COLUMNA FOOTER FINAL  -------- */
+
+.footerInferior .three{
+    display: flex;
+    align-items: center;
+}
+
+/* -------- 2 Y 3 COLUMNA JUNTAS  OCULTA - FOOTER FINAL  -------- */
+
+.footerInferior .two.oculta{
+    display: none;
+}
+
+
+ /* -------- CUARTA COLUMNA FOOTER FINAL  -------- */
+
+.footerInferior .four{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} 
+
+.footerInferior input{
+    width: 201px;
+    height: 44px;
+    border-radius: 50px;
+}
+
+.footerInferior button{
+    width: 63px;
+    height: 42px;
+    border-radius: 50px;
+    border: white;
+    color: white;
+}
+
+.footerInferior p{
+    color: #8C8C94;
+    font-size: 12.5px;
+    display: flex;
+    justify-content: end;
+}
+
+ /* -------- LO OCULTO -------- */
+
+.footerInferior .five{
+    display: none;
+}
+
+
+
+
+@media (min-width:400px) and (max-width:460px) {
+
+
+/*  ----------- HEADER --------------- */
+
+    .cabezera button{
+        display: none;
+    }
+
+    .cabezera {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .cabezera .btn_menu{
+        display: inline-flex;
+        margin-right: 80px;
+    }
+
+    .cabezera .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 85px);
+        background: #F3603B;
+        top:  -100%;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cabezera .menu_items li{
+        margin: 20px 20px 0 0;
+        line-height: 30px;
+    }
+
+    .cabezera .menu_items li a{
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .cabezera img{
+        /* height: 23.74px;
+        width: 145.54px; */
+        height: 17.74px;
+        width: 100.54px;
+        margin-left: 30px;
+    }
+
+    /* ------------- MAIN PARTE SUPERIOR  ----------------- */
+
+    .parteSuperior {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 120px;
+    }
+
+    .parteSuperior .dos img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 5%;
+    }
+
+    .parteSuperior .dos{
+        width:400px;
+        height: 400px;
+    }
+
+    .parteSuperior .uno{
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .parteSuperior .uno h2{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 50.47px;
+        text-align: center;
+    }
+
+    .parteSuperior .uno .unoUno{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .parteSuperior .uno p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .parteSuperior .uno button{
+        margin-left: 93px;
+    }
+
+    /* ------------- MAIN PARTE DEL MEDIO  ----------------- */
+
+    .parteMedio{
+        margin-bottom: 0px;
+    }
+
+    .parteMedio .columna1{
+        width: 70%;
+        margin-bottom: 80px;
+    }
+
+    .parteMedio .columna1 div{
+        width: 100%;
+    }
+    
+    .parteMedio .columna2{
+        width: 100%;
+    }
+
+    .parteMedio .columna1 h3{
+        font-size: 30px;
+        line-height: 41.26px;
+        text-align: center;
+    }
+    
+    .parteMedio .columna1 p{
+        
+        line-height: 24.18px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .parteMedio .columna2 .titulo{
+        margin: 18px 0 18px 15px;
+    }
+    
+    .parteMedio .columna2 .titulo div{
+        margin-right: 15px;
+    }
+    
+    .parteMedio .columna2 p{
+        font-size: 14.3px;
+        line-height: 25.52px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+ /* ------------- 400/460 MAIN PARTE INFERIOR  ----------------- */
+
+ .parteAbajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ .parteAbajo h3{
+    font-size: 30.21px;
+ }
+
+ .parteAbajo .card.uno{
+     width: 80%;
+     margin: 0 10% 0 10%;
+ }
+
+ .parteAbajo .card.dos{
+     display: none;
+ }
+    
+ .parteAbajo .card.tres{
+    display: none;
+}
+
+ /* ------------- 400/460  FOOTER PRIMERA PARTE  ----------------- */
+
+ .footerSuperior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.footerSuperior div{
+    width: 80%;
+}
+
+.footerSuperior p{
+    font-size: 40px;
+    line-height: 47.84px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ------------- 400/460  FOOTER ULTIMA PARTE  ----------------- */
+
+.footerInferior{
+    display: flex;
+    flex-direction: column;
+    height: 84vh;
+}
+
+.footerInferior .four p{
+    display: none;
+}
+
+.footerInferior .four {                            /*        Form          */
+    order: -5;
+    margin: 40px 0 30px 80px;
+}
+
+
+
+.footerInferior .two{        /* Lista 1 */
+    display: flex;
+    flex-direction: row;
+    display: inline;
+    order: -4;
+    width: 40%; 
+}
+
+.footerInferior .three{       /* Lista 2  */
+ 
+    display: inline;
+    order: -3;
+    width: 40%; 
+    float: right;
+}
+
+.footerInferior .one{       /* Iconos e imagen del logo */
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footerInferior .one div a img{      /* Para agrandar imagenes */
+    max-width: 100%;
+    max-height: 100%;
+    width: 33px;
+    margin-left: 15px;
+}
+
+.footerInferior .one div{                          
+    margin-bottom: 30px;
+}
+
+
+.footerInferior .five{             /* Copyright  */
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+
