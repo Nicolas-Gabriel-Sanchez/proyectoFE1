@@ -36,6 +36,10 @@
     display: block;
 }
 
+.cabezera .menu_items li a:hover{
+    color: #8C8C94;
+}
+
 .cabezera .btn_menu{
     cursor: pointer;
     display: none;
@@ -46,19 +50,19 @@
 }
 
 button{
+    cursor: pointer;
     width: 134px;
     height: 44px;
     background-color: #F3603B;
     border-radius: 50px;
     border: #F3603B;
-}
 
-button a{
     text-decoration: none;
     font-size: 13.18px;
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
+
 
   /* ------------- MAIN PARTE SUPERIOR  ------------------------------------------------------------------------------------ */
 
@@ -247,13 +251,11 @@ button a{
     background-color: white;
     border-radius: 50px;
     border: white;
-}
-
-.footerSuperior button a{
     color: #F3603B;
+    text-decoration: none;
 }
 
-/*  ------------------------------------  FOOTER  /   PARTE INFERIOR  -----------------------------------------------  */
+/*  -----------  FOOTER  /   PARTE INFERIOR  ------------  */
 
 .footerInferior{
     background-color: #1E1E26;
@@ -271,6 +273,7 @@ button a{
 
 .footerInferior .one div a{
     margin-right: 17px;
+    cursor: pointer;
 }
 
 /* -------- TERCERA COLUMNA FOOTER FINAL  -------- */
@@ -293,19 +296,17 @@ button a{
     text-decoration: none;
 }
 
+.footerInferior li a:hover{
+    color: #F3613C;
+}
+
+
  /* -------- TERCERA COLUMNA FOOTER FINAL  -------- */
 
 .footerInferior .three{
     display: flex;
     align-items: center;
 }
-
-/* -------- 2 Y 3 COLUMNA JUNTAS  OCULTA - FOOTER FINAL  -------- */
-
-.footerInferior .two.oculta{
-    display: none;
-}
-
 
  /* -------- CUARTA COLUMNA FOOTER FINAL  -------- */
 
@@ -343,8 +344,6 @@ button a{
 }
 
 
-
-
 @media (min-width:400px) and (max-width:460px) {   /* --------------------------------   MEDIA QUERY   ------------------------------------------*/
 
     html, body {
@@ -361,12 +360,15 @@ button a{
     .cabezera {
         display: flex;
         justify-content: space-between;
+    }
 
+    .cabezera .menu_items img{
+        margin-left: 10%;
     }
 
     .cabezera .btn_menu{
         display: inline-flex;
-        margin-right: 80px;
+        margin-left: 30%;
     }
 
     .cabezera .menu_items{
@@ -624,9 +626,13 @@ button a{
 
     }
 
+    .cabezera .menu_items img{
+        margin-left: 10%;
+    }
+
     .cabezera .btn_menu{
         display: inline-flex;
-        margin-right: 80px;
+        margin-left: 30%;
     }
 
     .cabezera .menu_items{
