@@ -13,7 +13,7 @@
     height: 85px;
 }
 
-.cabezera img{
+.cabezera h1 img{
     height: 23.74px;
     width: 145.54px;
 }
@@ -45,7 +45,7 @@
     display: none;
 }
 
-.cabezera ul.show{     
+.cabezera ul.show{     /* parte para el javascrip */
     top: 85px;
 }
 
@@ -61,6 +61,14 @@ button{
     font-size: 13.18px;
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+button:hover{
+    background-color: #f68f75;
+}
+
+button:active{
+    background-color: #C24C2F;
 }
 
 
@@ -540,7 +548,7 @@ button{
 
 /* ------------- 400/460  FOOTER ULTIMA PARTE  ----------------- */
 
-.footerInferior{
+/* .footerInferior{
     display: flex;
     flex-direction: column;
     height: 84vh;
@@ -551,41 +559,41 @@ button{
     display: none;
 }
 
-.footerInferior .four {    /*   Form   */
+.footerInferior .four {      Form  
     order: -5;
     margin: 40px 0 30px 80px;
 }
 
 
 
-.footerInferior .two{        /* Lista 1 */
+.footerInferior .two{        Lista 1
     display: flex;
     justify-content: center;
     order: -4;
     margin-right: 32px;
     text-align: center;
-    
-}
+ }
 
-.footerInferior .three{       /* Lista 2  */
+.footerInferior .three{       Lista 2 
     display: flex;
     justify-content: center;
     text-align: center;
     margin-right: 32px;
     order: -3;
     
-    /* width: 40%;  */
+    /* width: 40%;  /*
     
-}
+} */
 
-.footerInferior .one{       /* Iconos e imagen del logo */
+
+/* .footerInferior .one{       Iconos e imagen del logo
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
     margin: 20px 0;
 }
 
-.footerInferior .one div a img{      /* Para agrandar imagenes */
+.footerInferior .one div a img{      Para agrandar imagenes
     max-width: 100%;
     max-height: 100%;
     width: 33px;
@@ -597,15 +605,68 @@ button{
 }
 
 
-.footerInferior .five{             /* Copyright  */
+.footerInferior .five{             Copyright 
     display: block;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
 
+} */
+
+.footerInferior .one{       /* Imagenes e iconos*/
+    grid-area: cuatro;
+}
+ .footerInferior .one{       /* Iconos e imagen del logo */
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.footerInferior .one div a img{     /* Para agrandar imagenes */
+    max-width: 100%;
+    max-height: 100%;
+    width: 33px;
+    margin-left: 15px;
+    margin-bottom: 40px;
 }
 
+
+.footerInferior .two{
+    grid-area: dos;
+}
+
+.footerInferior .three{
+    grid-area: tres;
+}
+
+.footerInferior .four{    /* Form */ 
+    grid-area: una;
+    margin: 10% 10% 0 16%;
+}
+.footerInferior .four p{
+    display: none;
+}
+
+.footerInferior .five{  /* Copyright */
+    grid-area: cinco;
+    display: inline-block;
+    margin-right: 27%;
+}
+
+
+.footerInferior{
+    display: grid;
+    gap: 30px;
+    height: 80vh;
+    width: 100%;
+    grid-template-areas: 
+    "una una"
+    "dos tres"
+    "cuatro cuatro"
+    "cinco cinco"
+}
+
+}
 
 @media (min-width:340px) and (max-width:399.9px) {  /* --------------------------------   MEDIA QUERY   ------------------------------------------*/
  
@@ -806,7 +867,7 @@ button{
 
 /* ------------- 340/399.9  FOOTER ULTIMA PARTE  ----------------- */
 
-.footerInferior{
+/* .footerInferior{
     display: flex;
     flex-direction: column;
     height: 84vh;
@@ -817,14 +878,14 @@ button{
     display: none;
 }
 
-.footerInferior .four {       /*  Form   */
+.footerInferior .four {        Form  
     order: -5;
     margin: 40px 0 30px 80px;
 }
 
 
 
-.footerInferior .two{        /* Lista 1 */
+.footerInferior .two{        Lista 1
     display: flex;
     justify-content: center;
     order: -4;
@@ -833,25 +894,22 @@ button{
     
 }
 
-.footerInferior .three{       /* Lista 2  */
+.footerInferior .three{       Lista 2 
     display: flex;
     justify-content: center;
     text-align: center;
     margin-right: 32px;
-    order: -3;
-    
-    /* width: 40%;  */
-    
+    order: -3;  
 }
 
-.footerInferior .one{       /* Iconos e imagen del logo */
+.footerInferior .one{       Iconos e imagen del logo
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
     margin: 20px 0;
 }
 
-.footerInferior .one div a img{      /* Para agrandar imagenes */
+.footerInferior .one div a img{      Para agrandar imagenes
     max-width: 100%;
     max-height: 100%;
     width: 33px;
@@ -863,11 +921,63 @@ button{
 }
 
 
-.footerInferior .five{             /* Copyright  */
+.footerInferior .five{             Copyright 
     display: block;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+} */
+
+.footerInferior .one{       /* Imagenes e iconos*/
+    grid-area: cuatro;
+}
+ .footerInferior .one{       /* Iconos e imagen del logo */
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.footerInferior .one div a img{     /* Para agrandar imagenes */
+    max-width: 100%;
+    max-height: 100%;
+    width: 30px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+
+.footerInferior .two{
+    grid-area: dos;
+}
+
+.footerInferior .three{
+    grid-area: tres;
+}
+
+.footerInferior .four{    /* Form */ 
+    grid-area: una;
+    margin: 10% 8% 0 11%;
+}
+.footerInferior .four p{
+    display: none;
+}
+
+.footerInferior .five{  /* Copyright */
+    grid-area: cinco;
+    display: inline-block;
+    margin-right: 23%;
+}
+
+
+.footerInferior{
+    display: grid;
+    gap: 30px;
+    height: 80vh;
+    width: 100%;
+    grid-template-areas: 
+    "una una"
+    "dos tres"
+    "cuatro cuatro"
+    "cinco cinco"
 }
 
 }
